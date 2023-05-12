@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Campus
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Campus</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <div class="container">
+    <h1>Welcome to <span style="color: #3f51b5;">Campus</span> at GMIT Galway!</h1>
+    <p>Our campus at GMIT Galway is truly remarkable, providing an exceptional environment for learning, growth, and community. Nestled in the heart of Galway, our campus offers a picturesque setting with stunning natural landscapes, state-of-the-art facilities, and a vibrant atmosphere.</p>
+    <p>With modern classrooms, well-equipped laboratories, and dedicated study spaces, our campus is designed to support student success. Whether you're engaging in group discussions, conducting experiments, or working on projects, you'll find the resources and infrastructure to enhance your academic journey.</p>
+    <p>But our campus is more than just buildings and facilities. It's a hub of activity and creativity. From bustling student centers to vibrant cafeterias and recreational areas, you'll find a lively and inclusive community that fosters social connections and personal development.</p>
+    <p>With numerous clubs, societies, and sports teams, there are endless opportunities to get involved, make friends, and pursue your passions outside of the classroom. Our campus hosts a wide range of events, guest lectures, and cultural activities, ensuring a rich and vibrant student experience.</p>
+    <p>Experience the unique blend of natural beauty, cutting-edge facilities, and a thriving community at GMIT Galway's campus. It's the perfect place to create lasting memories, forge lifelong friendships, and make the most of your college years.</p>
+     <!-- button to go back to the home page -->
+     <ion-button expand="full" (click)="goToHome()">Go to Home</ion-button>
+    <div class="data-input">
+      <ion-input [(ngModel)]="savedData" placeholder="Enter your data"></ion-input>
+      <ion-button expand="full" color="primary" (click)="saveData()">Save Data</ion-button>
+      <ion-button expand="full" color="danger" (click)="clearData()">Clear Data</ion-button>
+    </div>
+  
+    <div id="map" class="map-container"></div> <!-- Add this div to hold the map -->
+  </div>
+</ion-content>
+
+<style>
+  .container {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .map-container {
+    height: 400px; /* Adjust the height of the map as needed */
+    margin-top: 20px;
+  }
+
+  .data-input {
+    margin-top: 20px;
+  }
+</style>

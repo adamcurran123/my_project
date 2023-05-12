@@ -1,19 +1,84 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Blank
+      myATU
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="ion-padding">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">myATU</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
- <h3>Welcome to Mobile Apps Starter project 2023</h3>
+  <div class="container">
+    <h1>Welcome to <span style="color: #3f51b5;">myATU</span>!</h1>
+    <p>Here you can find everything you need to know about our college, including upcoming events, campus news, and important dates and deadlines.</p>
+    <h4 style="color: #3f51b5;">Check out our categories below to get started:</h4>
+    <ul>
+      <li><ion-button (click)="sendToAcademics()" expand="full" color="primary">Academics</ion-button></li>
+      <li><ion-button (click)="sendToCampus()" expand="full" color="primary">Campus Life</ion-button></li>
+      <li><ion-button (click)="sendToStudent()" expand="full" color="primary">Student Life</ion-button></li>
+      <li><ion-button (click)="sendToContacts()" expand="full" color="primary">Contacts</ion-button></li>
+    </ul>
   </div>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-QjQRUCB6AXWqEQZdslDyidgmZY2_ono"></script>
 </ion-content>
+
+<style>
+  .container {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  li {
+    margin: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .category-button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+  }
+  
+  a:hover {
+    background-color: #303f9f;
+  }
+</style>

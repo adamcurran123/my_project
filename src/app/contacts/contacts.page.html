@@ -1,0 +1,61 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Contacts
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Contacts</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div class="container">
+    <h1>Get in Touch</h1>
+    <p>For any inquiries or assistance, please feel free to contact us. We're here to help!</p>
+    <p>You can reach us via email or phone:</p>
+    <ul>
+      <li>Email: <a href="mailto:info@atu.ie">info@atu.ie</a></li>
+      <li>Phone: +1 (123) 456-7890</li>
+    </ul>
+    <p>Our friendly and knowledgeable staff are ready to answer your questions and provide the support you need.</p>
+   <!-- button to go back to the home page -->
+   <ion-button expand="full" (click)="goToHome()">Go to Home</ion-button>
+  </div>
+</ion-content>
+
+<style>
+  .container {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  a {
+    color: #3f51b5;
+    text-decoration: none;
+  }
+</style>
+
